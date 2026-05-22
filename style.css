@@ -104,8 +104,8 @@ button {
 
 .display-top {
   display: flex;
-  justify-content: space-between;  /* 👈 solar left, casio right */
-  align-items: center;             /* 👈 same level */
+  justify-content: space-between;  
+  align-items: center;           
   width: 100%;
   margin-bottom: 6px;
 }
