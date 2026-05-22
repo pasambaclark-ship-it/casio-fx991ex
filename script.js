@@ -19,8 +19,12 @@ function pressButton (value) {
 }
 
 function calculate() {
-    let result = eval(display.innerText);
+  let result = eval(display.innerText);
+  if (result > 9999999 || result < -9999999) {
+    display.innerText = result.toExponential(2);
+  } else {
     display.innerText = parseFloat(result.toFixed(6));
+  }
 }
 
 function clearDisplay() {
@@ -37,73 +41,130 @@ function deleteLast() {
 
 function pressSqrt() {
   let result = Math.sqrt(eval(display.innerText));
-  display.innerText = parseFloat(result.toFixed(6));
+   if (result > 9999999 || result < -9999999) {
+   display.innerText = result.toExponential(2);
+  } else {
+    display.innerText = parseFloat(result.toFixed(6));
+  }
 }
+
 
 function pressLog() {
     let result = Math.log(eval(display.innerText));
+     if (result > 9999999 || result < -9999999) {
+    display.innerText = result.toExponential(2);
+  } else {
     display.innerText = parseFloat(result.toFixed(6));
+  }
 }
+
 
 function pressLog10(){
    let result = Math.log10(eval(display.innerText));
-   display.innerText = parseFloat(result.toFixed(6));
+   if (result > 9999999 || result < -9999999) {
+ display.innerText = result.toExponential(2);
+} else {
+  display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressSin() {
     let result = Math.sin(eval(display.innerText));
-    display.innerText = parseFloat(result.toFixed(6));
+    if (result > 9999999 || result < -9999999) {
+        display.innerText = result.toExponential(2);
+    } else {
+        display.innerText = parseFloat(result.toFixed(6));
+    }
 }
 
 function pressCos () {
     let result = Math.cos(eval(display.innerText));
-    display.innerText = parseFloat(result.toFixed(6));
+    if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
+  display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressTan() {
     let result = Math.tan(eval(display.innerText));
-   display.innerText = parseFloat(result.toFixed(6));
+    if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
+  display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressAcos() {
   let result = Math.acos(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+ display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressAsin() {
   let result = Math.asin(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressAtan() {
   let result = Math.atan(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressSinh() {
   let result = Math.sinh(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressCosh() {
   let result = Math.cosh(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressTanh() {
   let result = Math.tanh(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+  display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 
 function pressAbs() {
   let result = Math.abs(eval(display.innerText));
+  if (result > 9999999 || result < -9999999) {
+ display.innerText = result.toExponential(2);
+} else {
   display.innerText = parseFloat(result.toFixed(6));
+}
 }
 
 function pressMod() {
   let a=  eval(display.innerText.split("%")[0]);
   let b = eval(display.innerText.split("%")[1]);
-  display.innerText = parseFloat((a % b).toFixed(6));
+  if (b === 0) {
+    display.innerText = "Error";
+  } else {
+    display.innerText = parseFloat((a % b).toFixed(6));
+  }
 }
-
