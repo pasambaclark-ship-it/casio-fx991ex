@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class = "calculator">
+   <div class="display-top">
+
+   </div> 
+   
+    <div class="footer-text">CASIO </div> 
+    <div class="footer-text">fx-991EX PLUS</div>
+    
+    <div class="display" id="display">0</div>
+    <div class="upper">
+        <button class="up" onclick="pressSqrt()">√</button>
+        <button class="up" onclick="pressLog()">log</button>
+        <button class="up" onclick="pressLog10()">log<sub>10</sub></button>
+        <button class="up" onclick="pressSin()">sin</button>
+        <button class="up" onclick="pressCos()">cos</button>
+
+        <button class="up" onclick="pressTan()">tan</button>
+        <button class="up" onclick="pressAcos()">acos</button>
+        <button class="up" onclick="pressAsin()">asin</button>
+        <button class="up" onclick="pressAtan()">atan</button>
+        <button class="up" onclick="pressSinh()">sinh</button>
+
+        <button class="up" onclick="pressCosh()">cosh</button>
+        <button class="up" onclick="pressTanh()">tanh</button>
+        <button class="up" onclick="pressAbs()">|x|</button>
+        <button class="up" onclick="pressMod()">mod</button>
+        <button class="up" onclick="pressRad()">rad</button>
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="pressButton('7')">7</button>
+        <button onclick="pressButton('8')">8</button>
+        <button onclick="pressButton('9')">9</button>
+        <button class="op" onclick="deleteLast()">DEL</button>
+        <button class="op" onclick="clearDisplay()">AC</button>
+      
+        <button onclick="pressButton('4')">4</button>
+        <button onclick="pressButton('5')">5</button>
+        <button onclick="pressButton('6')">6</button>
+        <button class="op" onclick="pressButton('*')">x</button>
+        <button class="op" onclick="pressButton('%')">%</button>
+
+        <button onclick="pressButton('1')">1</button>
+        <button onclick="pressButton('2')">2</button>
+        <button onclick="pressButton('3')">3</button>
+        <button class="op" onclick="pressButton('+')">+</button>
+         <button class="op" onclick="pressButton('-')">-</button>
+      
+        <button class="op" onclick="pressButton('0')">0</button>
+        <button class="op" onclick="pressButton('.')">.</button>
+         <button class="op" onclick="pressButton('e')">e</button>
+          <button class="op" onclick="pressButton('Ans')">Ans</button>
+        <button class="op" onclick="calculate()">=</button>
+       
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

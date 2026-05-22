@@ -1,0 +1,111 @@
+
+
+.calculator {
+  width: 350px;
+  background: #2e2c2c;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 100px auto;
+  height: 620px
+}
+
+.display {
+  background: #111;
+  color: white;
+  font-size: 70px;
+  text-align: right;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  height: 80px;
+}
+
+.footer-texts {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;  
+}
+
+
+.upper {
+    display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.up {
+    background: #9b4444;
+    color: white;
+    border: 12px ;
+    border-radius: 6px;
+    padding: 15px 10px;
+    font-size: 14px;
+    
+}
+
+.buttons { 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 8px;
+  margin-top: 10px;
+  h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-text {
+  text-align:left;
+  font-size: 20px;
+  color: hwb(0 96% 1%);
+  padding: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: 12px ;
+  border-radius: 6px;
+  padding: 15px 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.up {
+  background: #8d8391;
+}
+
+.op {
+  background: #FF9500;
+  font-size: 18px;
+}
+
+.wide {
+  grid-column: span 2;
+}
+.solar-panel {
+  width: 80px;
+  height: 18px;
+  background: repeating-linear-gradient(
+    90deg,
+    #636060 0px,
+    #4a4a4a 1px,
+    #716c6c 1px,
+    #2e2e2e 12px   
+  );
+  border-radius: 3px;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-bottom: 6px;
+  border: 1px solid #111;
+}
+
+.display-top {
+  display: flex;
+  justify-content: space-between;  /* 👈 solar left, casio right */
+  align-items: center;             /* 👈 same level */
+  width: 100%;
+  margin-bottom: 6px;
+}
